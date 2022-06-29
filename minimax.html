@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="./css/style_minimax.css" />
+  </head>
+  <body>
+    <!-- <div class="overlay">
+      <div class="modal">
+        <p>Hi I am here</p>
+        <div class="controls">
+          <button id="closebtn">Close</button>
+          <button class="menu-item" onclick="newGame()" id="newgame">
+            New Game
+          </button>
+        </div>
+      </div>
+    </div> -->
+    <div class="container">
+      <div class="left">
+        <p class="instructions">
+          Select your difficulty level and the starting player
+        </p>
+        <nav class="menu">
+          <ol>
+            <li class="menu-item">
+              <a style="cursor: pointer">Difficulty</a>
+              <ol class="sub-menu">
+                <li class="menu-item">
+                  <a style="cursor: pointer" onclick="setDepth(1)">Level 1</a>
+                </li>
+                <li class="menu-item">
+                  <a style="cursor: pointer" onclick="setDepth(2)">Level 2</a>
+                </li>
+                <li class="menu-item">
+                  <a style="cursor: pointer" onclick="setDepth(3)">Level 3</a>
+                </li>
+                <li class="menu-item">
+                  <a style="cursor: pointer" onclick="setDepth(4)">Level 4</a>
+                </li>
+                <li class="menu-item">
+                  <a style="cursor: pointer" onclick="setDepth(5)">Level 5</a>
+                </li>
+                <li class="menu-item">
+                  <a style="cursor: pointer" onclick="setDepth(6)">Level 6</a>
+                </li>
+                <li class="menu-item">
+                  <a style="cursor: pointer" onclick="setDepth(7)">Level 7</a>
+                </li>
+              </ol>
+            </li>
+            <li class="menu-item">
+              <a style="cursor: pointer">Starting Player</a>
+              <ol class="sub-menu">
+                <li class="menu-item">
+                  <a style="cursor: pointer" onclick="setRival('human')"
+                    >Human</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a style="cursor: pointer" onclick="setRival('aiagent')"
+                    >AI Agent</a
+                  >
+                </li>
+              </ol>
+            </li>
+
+            <li class="menu-item">
+              <a onclick="newGame()" style="cursor: pointer">New Game</a>
+            </li>
+            <li class="menu-item">
+              <a href="index.html" style="cursor: pointer"> Back to Base</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="right">
+        <p class="result"></p>
+        <table>
+          <tr>
+            <td class="cell" value="0"></td>
+            <td class="cell" value="1" class="vertical"></td>
+            <td class="cell" value="2"></td>
+          </tr>
+          <tr>
+            <td class="cell" value="3" class="horizontal"></td>
+            <td class="cell" value="4" class="vertical horizontal"></td>
+            <td class="cell" value="5" class="horizontal"></td>
+          </tr>
+          <tr>
+            <td class="cell" value="6"></td>
+            <td class="cell" value="7" class="vertical"></td>
+            <td class="cell" value="8"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./js/minimax.js"></script>
+  </body>
+</html>

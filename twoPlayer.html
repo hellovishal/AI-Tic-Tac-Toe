@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title> Tic Tac Toe </title>
+        <link rel="stylesheet" href="./css/twoPlayer.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <div class="user1">
+                    <div class="pic">
+                        <img src="./images/person.png">
+                    </div>
+                    <div class="info">
+                        <p class="player">Player 1</p>
+                        <p class="playerName"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="mid">
+                <div class="launchForm">
+                    <div class="head">
+                        <h3>Tic Tac Toe Game</h3>
+                    </div>
+                    <div>
+                        <h4 class="twoPlayerHead">
+                            Two Player Game
+                        </h4>
+                    </div>
+                    <div class="form">
+                        <div class="formElements">
+                            <label for="p1Name">Player 1 Name</label>
+                            <input type="text" id = "p1Name">    
+                        </div>
+                        <div class="formElements">
+                            <label for="p2Name">Player 2 Name</label>
+                            <input type="text" id = "p2Name">    
+                        </div>
+                        <div class="button">
+                            <input type="submit" name="submitButton" id="submitButton">
+                        </div>
+                        <a href="index.html" class="backBase">Back to base</a>
+                    </div>
+                </div>
+                <div class="board hideBoard">
+                    <div class="head">
+                        <h3>Tic Tac Toe Game</h3>
+                    </div>
+                    <div class="turn">
+                        <div><h1 id="playerLabel">It's Player 1's turn</h1></div>
+                        
+                    </div>
+                    <h3 class="winMessage"></h3>
+                    <div class="container-out">
+                        <div class="container-in">
+                            <div class="table-container">
+                                <table>
+                                    <tr>
+                                        <td><div class="box" value="2"></div></td>
+                                        <td><div class="box" value="7"></div></td>
+                                        <td><div class="box" value="6"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="box" value="9"></div></td>
+                                        <td><div class="box" value="5"></div></td>
+                                        <td><div class="box" value="1"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="box" value="4"></div></td>
+                                        <td><div class="box" value="3"></div></td>
+                                        <td><div class="box" value="8"></div></td>
+                                    </tr>
+                                </table>
+                                <button id="reset">Reset</button>
+                                <button id="backToMenu">Go Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="right">
+                <div class="user1">
+                    <div class="pic">
+                        <img src="./images/person.png">
+                    </div>
+                    <div class="info">
+                        <p class="player">Player 2</p>
+                        <p class="playerName"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/twoPlayer.js"></script>
+    </body>
+</html>
